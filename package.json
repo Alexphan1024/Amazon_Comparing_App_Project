@@ -1,0 +1,31 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Aws rekognition project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node challenge_blank.js"
+  },
+  "author": "JoonKim",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.213.1",
+    "busboy": "^0.2.14",
+    "chart.js": "^2.7.2",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "filepath": "^1.1.0",
+    "fs": "0.0.1-security",
+    "hbs": "^4.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "progressbar.js": "^1.0.1",
+    "s3": "^4.4.0",
+    "url": "^0.11.0",
+    "window": "^4.2.5"
+  },
+  "devDependencies": {
+    "google-charts": "^1.1.0"
+  }
+}

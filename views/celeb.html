@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find My Celebrity</title>
+    <link rel="stylesheet" type="text/css" href="celeb_style.css">
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="display">
+        <a href="http://localhost:8080/">
+        	<img id="logo" src="logo.png" />
+    	</a>
+    	<div id=imag1_div>
+    		<h1 class="main"><a href={{url}}>{{Name}}</a></h1>
+    		<!-- <h1 class="main"><a id="info" href="http://www.imdb.com/name/nm2225369/">Jennifer Lawrence</a></h1> -->
+    		<!-- <img id="cel_imag" src="jen.jpg"></img> -->
+    		<img id="cel_imag" src={{img}}></img>
+    		<!-- <h2>Level of Confidence: 90%</h2> -->
+    		<h2>Level of Confidence: {{conf}}%</h2>
+    	</div>
+    </div>
+</body>
+
+</html>

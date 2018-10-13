@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Comparing Two People</title>
+    <link rel="stylesheet" type="text/css" href="compare_style.css">
+    <style type="text/css">  
+        body { margin:0; }  
+    </style>
+</head>
+
+<body>
+    <div id="display">
+    	<a href="http://localhost:8080/">
+        <img id="logo" src="/images/logo.png" />
+    </a>
+        <div id="img1_div">
+        	<h1>Source Image</h1>
+            <img class="images" src={{imgOne}}></img>
+            <!-- <img class="images" src=https://www.w3schools.com/html/pulpitrock.jpg></img> -->
+        </div>
+        <div id="img2_div">
+        	<h1>Target Image</h1>
+            <img class="images" src={{imgTwo}}></img>
+            <!-- <img class="images" src=https://www.w3schools.com/html/pulpitrock.jpg></img> -->
+        </div>
+        <div id=info_data>
+            <p>Similarity</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width:{{sims}}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> Similarity : {{sims}}% </div>
+            </div>
+            <p>Match Confidence</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width:{{conf}}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> Match Confidence : {{conf}}% </div>
+            </div>
+            
+            
+            <!-- <p>Why won't the delayed executive bore a blank thumb? The advisory autumn stunts the anonymous crew. The displayed worm steals a dreary poison. How can a lined sympathy pay the recovering diagnosis? An inevitable sketch polishes the recovering worm. Another figured fighter vends a thirst throughout a transient soundtrack.</p> -->
+        </div>
+        <img id=vs src={{result}}>
+        <!-- <button id="try_a" href="http://localhost:8080/">Try Again</button> -->
+    </div>
+</body>
+
+</html>

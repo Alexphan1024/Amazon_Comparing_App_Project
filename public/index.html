@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JoJerAl Face Comparison</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+	<div id='display'>
+
+		<img id='analyze' src='https://cdn.thestage.co.uk/wp-content/uploads/2015/05/Benedict-Cumberbatch-photo-credit-Victoria-Erdelevskaya-NT-700x455.jpg'/>
+
+		<img id='celebrity' src='https://images.agoramedia.com/everydayhealth/gcms/celebs-depression-01-intro-RM-722x406.jpg'/>
+
+		<img id='compare' src='https://news.nationalgeographic.com/content/dam/news/photos/000/837/83704.jpg'/>
+
+		<form action = "/analyze" method = "post" enctype="multipart/form-data">
+			<input type = "file" name = "facetosearch" id = "fileToUpload">
+			<input type = "submit" value = "Analyze" name = "submit" id='analyzebut'>
+		</form>
+
+		<form action = "/celeb" method = "post" enctype="multipart/form-data">
+			<input type = "file" name = "findceleb" id = "fileToUpload3">
+			<input action = "/celeb" type = "submit" value = "Celebrity" name = "submit" id='celebritybut'>
+		</form>
+
+		<form action = "/compare" method = "post" enctype="multipart/form-data">
+			<input type = "file" name = "imgOne" id = "fileToUpload1">
+			<input type = "file" name = "imgTwo" id = "fileToUpload2">
+			<input action = "/compare" type = "submit" value = "Compare" name = "submit" id='comparebut'>
+		</form>
+
+	</div>
+	<img id='logo' src='images/logo.png'>
+    
+</body>
+
+</html>
